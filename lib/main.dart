@@ -47,11 +47,11 @@ class _MyHomePageState extends State<MyHomePage> {
     operand = buttonText;
     _output = "0";
   }
-  else if(buttonText == "."){
+  // else if(buttonText == "."){
 
-    if(_output.contains(".")){
-    return;
-    }
+  //   if(_output.contains(".")){
+  //   return;
+  //   }
     else{
       _output = _output + buttonText;
       
