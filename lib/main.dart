@@ -31,8 +31,8 @@ class _MyHomePageState extends State<MyHomePage> {
   String output= "0";
 
   String _output= "0";
-  double num1 = 0;
-  double num2 = 0;
+  num num1 = 0;
+  num num2 = 0;
   String operand = "";
 
   buttonPressed(String buttonText){
@@ -46,7 +46,8 @@ class _MyHomePageState extends State<MyHomePage> {
     num1 = double.parse(output);
     operand = buttonText;
     _output = "0";
-  }else if(buttonText == "."){
+  }
+  else if(buttonText == "."){
 
     if(_output.contains(".")){
     print ("Already Contains a Decimal");
