@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
       title: 'CALCULATOR',
       theme: new ThemeData(
         primarySwatch: Colors.blue,
+        appBarTheme: AppBarTheme(centerTitle: true),
       ),
       home: new MyHomePage(title: 'CALCULATOR'),
     );
@@ -129,6 +130,13 @@ Widget buildButton(String buttonText){
           new Column(
             children: [
               new Row(
+                
+                children: [
+                  Container(height: 55.0,width: 309.0),
+                  buildButton("CLEAR",),
+                ],
+              ),
+              new Row(
                 children: [
                   buildButton("7"),
                   buildButton("8"),
@@ -160,11 +168,7 @@ Widget buildButton(String buttonText){
                   buildButton("="),
                 ],
               ),
-              new Row(
-                children: [
-                  buildButton("CLEAR",),
-                ],
-              ),
+              
             ],
           )
            
